@@ -1,168 +1,28 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.1">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #000000}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'Helvetica Neue'; -webkit-text-stroke: #000000; min-height: 18.0px}
-    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px 'Helvetica Neue'; color: #ffffff; -webkit-text-stroke: #000000; background-color: #ffffff}
-    span.s1 {font-kerning: none; background-color: #ffffff}
-    span.s2 {font-kerning: none}
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Be My Valentine 💖</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
-<p class="p1"><span class="s1">&lt;html lang="en"&gt;</span></p>
-<p class="p1"><span class="s1">&lt;head&gt;</span></p>
-<p class="p1"><span class="s1">  &lt;meta charset="UTF-8" /&gt;</span></p>
-<p class="p1"><span class="s1">  &lt;title&gt;Valentine?&lt;/title&gt;</span></p>
-<p class="p1"><span class="s1">  &lt;style&gt;</span></p>
-<p class="p1"><span class="s1">    body {</span></p>
-<p class="p1"><span class="s1">      margin: 0;</span></p>
-<p class="p1"><span class="s1">      height: 100vh;</span></p>
-<p class="p1"><span class="s1">      overflow: hidden;</span></p>
-<p class="p1"><span class="s1">      font-family: system-ui, sans-serif;</span></p>
-<p class="p1"><span class="s1">      background: linear-gradient(135deg, #ffe6f0, #fff0f6);</span></p>
-<p class="p1"><span class="s1">      display: flex;</span></p>
-<p class="p1"><span class="s1">      justify-content: center;</span></p>
-<p class="p1"><span class="s1">      align-items: center;</span></p>
-<p class="p1"><span class="s1">    }</span></p>
-<p class="p2"><span class="s2"></span><br></p>
-<p class="p1"><span class="s1">    .card {</span></p>
-<p class="p1"><span class="s1">      position: relative;</span></p>
-<p class="p1"><span class="s1">      z-index: 2;</span></p>
-<p class="p1"><span class="s1">      background: white;</span></p>
-<p class="p1"><span class="s1">      padding: 2.5rem 3rem;</span></p>
-<p class="p1"><span class="s1">      border-radius: 20px;</span></p>
-<p class="p1"><span class="s1">      text-align: center;</span></p>
-<p class="p1"><span class="s1">      box-shadow: 0 15px 40px rgba(0,0,0,0.15);</span></p>
-<p class="p1"><span class="s1">    }</span></p>
-<p class="p2"><span class="s2"></span><br></p>
-<p class="p1"><span class="s1">    h1 {</span></p>
-<p class="p1"><span class="s1">      margin-bottom: 2rem;</span></p>
-<p class="p1"><span class="s1">      font-size: 2rem;</span></p>
-<p class="p1"><span class="s1">    }</span></p>
-<p class="p2"><span class="s2"></span><br></p>
-<p class="p1"><span class="s1">    button {</span></p>
-<p class="p1"><span class="s1">      font-size: 1.2rem;</span></p>
-<p class="p1"><span class="s1">      padding: 0.75rem 1.8rem;</span></p>
-<p class="p1"><span class="s1">      border-radius: 999px;</span></p>
-<p class="p1"><span class="s1">      border: none;</span></p>
-<p class="p1"><span class="s1">      cursor: pointer;</span></p>
-<p class="p1"><span class="s1">      margin: 0 12px;</span></p>
-<p class="p1"><span class="s1">    }</span></p>
-<p class="p2"><span class="s2"></span><br></p>
-<p class="p1"><span class="s1">    #yes {</span></p>
-<p class="p1"><span class="s1">      background: #ff4d6d;</span></p>
-<p class="p1"><span class="s1">      color: white;</span></p>
-<p class="p1"><span class="s1">    }</span></p>
-<p class="p2"><span class="s2"></span><br></p>
-<p class="p1"><span class="s1">    #no {</span></p>
-<p class="p1"><span class="s1">      background: #ddd;</span></p>
-<p class="p1"><span class="s1">      position: absolute;</span></p>
-<p class="p1"><span class="s1">    }</span></p>
-<p class="p2"><span class="s2"></span><br></p>
-<p class="p1"><span class="s1">    .cat {</span></p>
-<p class="p1"><span class="s1">      position: absolute;</span></p>
-<p class="p1"><span class="s1">      font-size: 1.5rem;</span></p>
-<p class="p1"><span class="s1">      animation: float 12s linear infinite;</span></p>
-<p class="p1"><span class="s1">      opacity: 0.7;</span></p>
-<p class="p1"><span class="s1">    }</span></p>
-<p class="p2"><span class="s2"></span><br></p>
-<p class="p1"><span class="s1">    @keyframes float {</span></p>
-<p class="p1"><span class="s1">      from { transform: translateY(100vh); }</span></p>
-<p class="p1"><span class="s1">      to { transform: translateY(-10vh); }</span></p>
-<p class="p1"><span class="s1">    }</span></p>
-<p class="p2"><span class="s2"></span><br></p>
-<p class="p1"><span class="s1">    .firework {</span></p>
-<p class="p1"><span class="s1">      position: absolute;</span></p>
-<p class="p1"><span class="s1">      width: 10px;</span></p>
-<p class="p1"><span class="s1">      height: 10px;</span></p>
-<p class="p1"><span class="s1">      border-radius: 50%;</span></p>
-<p class="p1"><span class="s1">      animation: explode 1s ease-out forwards;</span></p>
-<p class="p1"><span class="s1">    }</span></p>
-<p class="p2"><span class="s2"></span><br></p>
-<p class="p1"><span class="s1">    @keyframes explode {</span></p>
-<p class="p1"><span class="s1">      from {</span></p>
-<p class="p1"><span class="s1">        transform: scale(0);</span></p>
-<p class="p1"><span class="s1">        opacity: 1;</span></p>
-<p class="p1"><span class="s1">      }</span></p>
-<p class="p1"><span class="s1">      to {</span></p>
-<p class="p1"><span class="s1">        transform: scale(15);</span></p>
-<p class="p1"><span class="s1">        opacity: 0;</span></p>
-<p class="p1"><span class="s1">      }</span></p>
-<p class="p1"><span class="s1">    }</span></p>
-<p class="p1"><span class="s1">  &lt;/style&gt;</span></p>
-<p class="p1"><span class="s1">&lt;/head&gt;</span></p>
-<p class="p1"><span class="s1">&lt;body&gt;</span></p>
-<p class="p2"><span class="s2"></span><br></p>
-<p class="p1"><span class="s1">  &lt;div class="card"&gt;</span></p>
-<p class="p1"><span class="s1">    &lt;h1&gt;Will you be my Valentine? 🐱💘&lt;/h1&gt;</span></p>
-<p class="p1"><span class="s1">    &lt;button id="yes"&gt;Yes 💖&lt;/button&gt;</span></p>
-<p class="p1"><span class="s1">    &lt;button id="no"&gt;No 😼&lt;/button&gt;</span></p>
-<p class="p1"><span class="s1">  &lt;/div&gt;</span></p>
-<p class="p2"><span class="s2"></span><br></p>
-<p class="p1"><span class="s1">  &lt;script&gt;</span></p>
-<p class="p1"><span class="s1">    // Floating cats</span></p>
-<p class="p1"><span class="s1">    const cats = ["🐱","🐈","🐾","😺","😻"];</span></p>
-<p class="p1"><span class="s1">    for (let i = 0; i &lt; 25; i++) {</span></p>
-<p class="p1"><span class="s1">      const cat = document.createElement("div");</span></p>
-<p class="p1"><span class="s1">      cat.className = "cat";</span></p>
-<p class="p1"><span class="s1">      cat.textContent = cats[Math.floor(Math.random() * cats.length)];</span></p>
-<p class="p1"><span class="s1">      cat.style.left = Math.random() * 100 + "vw";</span></p>
-<p class="p1"><span class="s1">      cat.style.animationDuration = 8 + Math.random() * 10 + "s";</span></p>
-<p class="p1"><span class="s1">      cat.style.fontSize = 1 + Math.random() * 1.5 + "rem";</span></p>
-<p class="p1"><span class="s1">      document.body.appendChild(cat);</span></p>
-<p class="p1"><span class="s1">    }</span></p>
-<p class="p2"><span class="s2"></span><br></p>
-<p class="p1"><span class="s1">    // No button runs away</span></p>
-<p class="p1"><span class="s1">    const noBtn = document.getElementById("no");</span></p>
-<p class="p1"><span class="s1">    noBtn.addEventListener("mouseover", () =&gt; {</span></p>
-<p class="p1"><span class="s1">      const x = Math.random() * (window.innerWidth - noBtn.offsetWidth);</span></p>
-<p class="p1"><span class="s1">      const y = Math.random() * (window.innerHeight - noBtn.offsetHeight);</span></p>
-<p class="p1"><span class="s1">      noBtn.style.left = x + "px";</span></p>
-<p class="p1"><span class="s1">      noBtn.style.top = y + "px";</span></p>
-<p class="p1"><span class="s1">    });</span></p>
-<p class="p2"><span class="s2"></span><br></p>
-<p class="p1"><span class="s1">    // Fireworks + Correct</span></p>
-<p class="p1"><span class="s1">    document.getElementById("yes").addEventListener("click", () =&gt; {</span></p>
-<p class="p1"><span class="s1">      for (let i = 0; i &lt; 20; i++) {</span></p>
-<p class="p1"><span class="s1">        const fw = document.createElement("div");</span></p>
-<p class="p1"><span class="s1">        fw.className = "firework";</span></p>
-<p class="p1"><span class="s1">        fw.style.left = Math.random() * 100 + "vw";</span></p>
-<p class="p1"><span class="s1">        fw.style.top = Math.random() * 100 + "vh";</span></p>
-<p class="p1"><span class="s1">        fw.style.background = `hsl(${Math.random() * 360}, 100%, 70%)`;</span></p>
-<p class="p1"><span class="s1">        document.body.appendChild(fw);</span></p>
-<p class="p1"><span class="s1">        setTimeout(() =&gt; fw.remove(), 1000);</span></p>
-<p class="p1"><span class="s1">      }</span></p>
-<p class="p2"><span class="s2"></span><br></p>
-<p class="p1"><span class="s1">      setTimeout(() =&gt; {</span></p>
-<p class="p1"><span class="s1">        document.body.innerHTML = `</span></p>
-<p class="p1"><span class="s1">          &lt;div style="</span></p>
-<p class="p1"><span class="s1">            height:100vh;</span></p>
-<p class="p1"><span class="s1">            display:flex;</span></p>
-<p class="p1"><span class="s1">            justify-content:center;</span></p>
-<p class="p1"><span class="s1">            align-items:center;</span></p>
-<p class="p1"><span class="s1">            flex-direction:column;</span></p>
-<p class="p1"><span class="s1">            background:#ffd6e0;</span></p>
-<p class="p1"><span class="s1">            font-size:2.5rem;</span></p>
-<p class="p1"><span class="s1">            text-align:center;</span></p>
-<p class="p1"><span class="s1">          "&gt;</span></p>
-<p class="p1"><span class="s1">            &lt;div&gt;✅ Correct 😌&lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">            &lt;div style="font-size:1.5rem; margin-top:1rem;"&gt;</span></p>
-<p class="p1"><span class="s1">              You’re stuck with me forever 💕🐱</span></p>
-<p class="p1"><span class="s1">            &lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">          &lt;/div&gt;</span></p>
-<p class="p1"><span class="s1">        `;</span></p>
-<p class="p1"><span class="s1">      }, 600);</span></p>
-<p class="p1"><span class="s1">    });</span></p>
-<p class="p1"><span class="s1">  &lt;/script&gt;</span></p>
-<p class="p2"><span class="s2"></span><br></p>
-<p class="p1"><span class="s1">&lt;/body&gt;</span></p>
-<p class="p3"><span class="s2">&lt;/html&gt;</span></p>
+
+  <div class="hearts"></div>
+
+  <div class="container">
+    <img src="https://i.imgur.com/4M7IWwP.png" alt="Cute Bear" class="bear" />
+
+    <h1>Will you be my Valentine?</h1>
+
+    <div class="buttons">
+      <button id="yesBtn">Yes 💖</button>
+      <button id="noBtn">No 😢</button>
+    </div>
+
+    <p id="message" class="hidden"></p>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
