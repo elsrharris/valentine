@@ -3,7 +3,7 @@ const noBtn = document.getElementById("noBtn");
 const message = document.getElementById("message");
 
 yesBtn.addEventListener("click", () => {
-  message.textContent = "YAYYY 🥰 Best decision ever!! 💍💖";
+  message.textContent = "well done this was the only correct answer 🥰 Best decision ever!! 💍💖";
   message.classList.remove("hidden");
   noBtn.style.display = "none";
 });
